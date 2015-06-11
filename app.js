@@ -20,6 +20,6 @@ http.createServer(function ( req, res ) {
 		default:
 			console.log('No app found for', hostname, pathname);
 	}
-}).listen(80, function () {
-	console.log('Listening on port 80');
+}).listen(1337, function () {
+	console.log('Listening on port 1337, make sure you\'ve setup the iptables properly');
 });
