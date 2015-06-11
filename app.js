@@ -12,10 +12,10 @@ http.createServer(function ( req, res ) {
 	console.log('pathname', pathname);
 
 	switch (hostname) {
-		case 'cryptoquip.io':
+		case 'api.cryptoquip.io':
 			proxy.web(req, res, { target: 'http://localhost:3000' });
 			break;
-		case 'api.cryptoquip.io':
+		case 'cryptoquip.io':
 			proxy.web(req, res, { target: 'http://localhost:3001' });
 		default:
 			console.log('No app found for', hostname, pathname);
