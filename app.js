@@ -17,6 +17,7 @@ http.createServer(function ( req, res ) {
 			break;
 		case 'cryptoquip.io':
 			proxy.web(req, res, { target: 'http://localhost:3001' });
+			break;
 		default:
 			console.log('No app found for', hostname, pathname);
 	}
